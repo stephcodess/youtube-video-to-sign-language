@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+youtube-dl
+yt-dlp
+ffmpeg-python
+smplx
+transformers
+speechrecognition
+pydantic
+pytest
+python-dotenv
