@@ -58,6 +58,15 @@ def postprocess_output(output):
     """
 
     gestures = []
+
+    # TODO:
+    # Use the frame_data from your trained model.
+    # "joints": [
+    #             {"name": "head", "position": [0.1, 0.5, 0.2], "rotation": [0, 0, 0, 1]},
+    #             {"name": "left_hand", "position": [-0.2, 0.4, 0.1], "rotation": [0.5, 0, 0, 0.8]},
+    #             {"name": "right_hand", "position": [0.3, 0.4, 0.1], "rotation": [0.7, 0, 0, 0.7]},
+    #         ],
+    # Should be replaced with data from the LLM
     for frame_idx, frame_data in enumerate(output):
         frame = {
             "frame": frame_idx + 1,
